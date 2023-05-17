@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #ddd;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: white;
+}
+header h1{
+    padding: 10px 0;
+    margin: 0 40px;
+}
+header ul{
+    display: flex;
+    margin-top: 20px;
+    margin-right: 40px;
+    justify-content: space-between;
+    width: 400px;
+    list-style: none;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+header ul li a,
+.total{
+    text-decoration: none;
+    color: #000;
+}
+header ul li a:hover{
+    color: #1900ff;
+}
+.main{
+    margin: 100px auto 30px;
+    background-color: white;
+    width: 1200px;
+    padding: 10px 30px;
+}
+.main .card{
+    display: inline-block;
+    padding: 10px;
+    width: 250px;
+    margin: 15px;
+    text-align: center;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 0px 2px 15px #000;
+}
+.main .card.checked{
+    background-color: #1900ff;
+}
+.main .card:hover{
+    cursor: pointer;
+    transition: 0.5s;
+    color: white;
+    background-color: rgb(73, 63, 63);
+}
+.main .card img{
+    border-radius: 20px;
+    width: 100%;
+}
+.pags{
+    background-color: white;
+    padding: 20px;
+    width: fit-content;
+    margin: 20px auto;
+}
+.pags span{
+    border: 1px solid #000;
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    border-radius: 8px;
+}
+.pags span:hover{
+    color: white;
+    transition: 0.5s;
+    background-color: blue;
+}
+.total{
+    color: blue;
+    margin: 3px;
+}
+i{
+    width: 28px;
+    height: 40px;
+    color: #000;
+    font-size: 20px;
+    display: inline-block;
+}
+i:hover{
+    color: #1900ff;
+}
+@media (max-width:376px) {
+    header h1{
+        margin: 0;
+    }
+    header{
+        /* display: inline-block; */
+        padding: 5px;
+    }
+    header ul{
+        position: relative;
+        font-size: 15px;
+        width: 150px;
+    }
+    .main{
+        width: 100%;
+    }
+}
